@@ -94,8 +94,5 @@
     
 ---
 
-## 🧑‍💻 Contributors
 
-- [Your Name]Manish Tiwary
----
 
