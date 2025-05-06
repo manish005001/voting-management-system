@@ -96,7 +96,6 @@
 
 ## 🧑‍💻 Contributors
 
-- [Your Name](https://github.com/your-Manish Tiwary)
-
+- [Your Name]Manish Tiwary
 ---
 
