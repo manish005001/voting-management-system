@@ -91,15 +91,12 @@
 ## 📷 Screenshots
 
 *(Add screenshots of key UI pages here if available)*
-
+    
 ---
 
 ## 🧑‍💻 Contributors
 
-- [Your Name](https://github.com/your-username)
+- [Your Name](https://github.com/your-Manish Tiwary)
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
