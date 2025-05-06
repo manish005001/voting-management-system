@@ -1,59 +1,105 @@
-# OnlineVotingSystem
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+---
 
-## Development server
+## 🚀 Getting Started
 
-To start a local development server, run:
+### Prerequisites
 
-```bash
-ng serve
-```
+- Node.js & npm
+- Angular CLI
+- Java 17+
+- Maven
+- MySQL Server
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🔧 Setup Instructions
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 1️⃣ Backend - Spring Boot
 
-```bash
-ng generate component component-name
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-repo/voting-system.git
+    cd voting-system/backend
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Configure MySQL Database:
+    ```properties
+    # application.properties
+    spring.datasource.url=jdbc:mysql://localhost:3306/voting_db
+    spring.datasource.username=root
+    spring.datasource.password=your_password
+    spring.jpa.hibernate.ddl-auto=update
+    ```
 
-```bash
-ng generate --help
-```
+3. Run the Spring Boot application:
+    ```bash
+    mvn spring-boot:run
+    ```
 
-## Building
+---
 
-To build the project run:
+### 2️⃣ Frontend - Angular
 
-```bash
-ng build
-```
+1. Navigate to frontend directory:
+    ```bash
+    cd ../frontend
+    ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-## Running unit tests
+3. Run the development server:
+    ```bash
+    ng serve
+    ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+4. Open in browser:
+    ```
+    http://localhost:4200
+    ```
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 🔐 Features
 
-For end-to-end (e2e) testing, run:
+### Admin
+- Create and manage elections
+- Add candidates and view vote counts
+- Activate/deactivate voting sessions
 
-```bash
-ng e2e
-```
+### Student (Voter)
+- Register and login securely
+- View active elections
+- Cast vote once per election
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 📦 API Endpoints
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> See full list in backend documentation or Swagger (if enabled)
+
+- `POST /api/auth/register` - Register user
+- `POST /api/auth/login` - Authenticate user
+- `GET /api/elections/active` - List active elections
+- `POST /api/vote` - Submit vote
+
+---
+
+## 📷 Screenshots
+
+*(Add screenshots of key UI pages here if available)*
+
+---
+
+## 🧑‍💻 Contributors
+
+- [Your Name](https://github.com/your-username)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
